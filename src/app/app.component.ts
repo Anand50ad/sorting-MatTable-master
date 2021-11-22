@@ -34,7 +34,7 @@ export class AppComponent implements AfterViewInit {
   
   details:Detail[]=clientDetails.kpiData;
   datasource:Detail[]=this.details;
-  displayedColumns: string[] = ['fil', 'name', 'produkt', 'bestand','nettoneuakquistion','aktueller'];
+  displayedColumns: string[] = ['fil', 'name', 'produkt', 'bestand','nettoneuakquisition','aktueller'];
   dataSource = new MatTableDataSource(this.details);
 
   constructor(private _liveAnnouncer: LiveAnnouncer) {}
